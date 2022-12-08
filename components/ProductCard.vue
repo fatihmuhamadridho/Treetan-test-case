@@ -33,7 +33,12 @@
         <p>4.76</p>
       </div>
       <button>
-        <img :src="require(`assets/img/gg_shopping-cart.svg`)" alt="" />
+        <img
+          :src="require(`assets/img/gg_shopping-cart.svg`)"
+          alt=""
+          width="34"
+          height="34"
+        />
         <p>Add To Cart</p>
       </button>
     </div>

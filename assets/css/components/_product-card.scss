@@ -63,6 +63,7 @@
             }
 
             &_discount_prevPrice {
+                text-decoration: line-through;
                 margin-left: 8px;
                 font-weight: 400;
             }
@@ -83,7 +84,7 @@
             margin-top: 37px;
             padding: 12px 0px;
             width: 100%;
-            background: $base-primary;
+            background: $btn-primary;
             color: $text-secondary;
             display: flex;
             align-items: center;

@@ -19,82 +19,47 @@
     .homepage {
         margin: 70px 63px;
         display: flex;
-        justify-content: space-between;
-    
-        &_card {
-            display: grid;
-            grid-template-columns: 376px 376px;
-            gap: 40px;
-        }
-    }
-}
-
-@media screen and (min-width: 640px) {
-    .homepage {
-        margin: 70px 63px;
-        display: flex;
-        justify-content: space-between;
-    
-        &_card {
-            display: grid;
-            grid-template-columns: 376px 376px;
-            gap: 40px;
-        }
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .homepage {
-        margin: 70px 63px;
-        display: flex;
-        justify-content: space-between;
-    
-        &_card {
-            display: grid;
-            grid-template-columns: 376px 376px;
-            gap: 40px;
-        }
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .homepage {
-        margin: 70px 63px;
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     
         &_card {
             display: grid;
             grid-template-columns: 376px;
             gap: 40px;
         }
-    }
-}
 
-@media screen and (min-width: 1280px) {
-    .homepage {
-        margin: 70px 63px;
-        display: flex;
-        justify-content: space-between;
-    
-        &_card {
-            display: grid;
-            grid-template-columns: 376px 376px;
-            gap: 40px;
+        &_cart {
+            margin-top: 40px;
         }
     }
 }
 
-@media screen and (min-width: 1536px) {
+@media screen and (min-width: 1024px) {
     .homepage {
-        margin: 70px 63px;
-        display: flex;
         justify-content: space-between;
-    
-        &_card {
-            display: grid;
-            grid-template-columns: 376px 376px 376px;
-            gap: 40px;
+        flex-direction: row;
+        align-items: flex-start;
+
+        &_cart {
+            margin-top: 0px;
         }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .homepage_card {
+        grid-template-columns: 376px 376px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .homepage_card {
+        grid-template-columns: 376px 376px 376px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .homepage_card {
+        grid-template-columns: 376px 376px 376px 376px;
     }
 }
