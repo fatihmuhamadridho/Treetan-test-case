@@ -1,0 +1,100 @@
+@import "/assets/css/abstracts/colors";
+
+.homepage {
+    margin: 70px 63px;
+    display: flex;
+    justify-content: space-between;
+
+    &_card {
+        display: grid;
+        grid-template-columns: 376px 376px;
+        gap: 40px;
+    }
+
+    &_cart {
+    }
+}
+
+@media screen and (min-width: 0px) {
+    .homepage {
+        margin: 70px 63px;
+        display: flex;
+        justify-content: space-between;
+    
+        &_card {
+            display: grid;
+            grid-template-columns: 376px 376px;
+            gap: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .homepage {
+        margin: 70px 63px;
+        display: flex;
+        justify-content: space-between;
+    
+        &_card {
+            display: grid;
+            grid-template-columns: 376px 376px;
+            gap: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .homepage {
+        margin: 70px 63px;
+        display: flex;
+        justify-content: space-between;
+    
+        &_card {
+            display: grid;
+            grid-template-columns: 376px 376px;
+            gap: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .homepage {
+        margin: 70px 63px;
+        display: flex;
+        justify-content: space-between;
+    
+        &_card {
+            display: grid;
+            grid-template-columns: 376px;
+            gap: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .homepage {
+        margin: 70px 63px;
+        display: flex;
+        justify-content: space-between;
+    
+        &_card {
+            display: grid;
+            grid-template-columns: 376px 376px;
+            gap: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .homepage {
+        margin: 70px 63px;
+        display: flex;
+        justify-content: space-between;
+    
+        &_card {
+            display: grid;
+            grid-template-columns: 376px 376px 376px;
+            gap: 40px;
+        }
+    }
+}
