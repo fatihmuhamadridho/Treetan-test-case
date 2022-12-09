@@ -1,25 +1,26 @@
 <template>
   <div class="product-card">
     <img
-      :src="require(`assets/img/product2.png`)"
+      class="product-card_thumb"
+      :src="thumb"
       alt=""
       width="376"
       height="253"
     />
     <div class="product-card_label">
-      <p>Smartphones</p>
+      <p>{{ category }}</p>
     </div>
     <div class="product-card_content">
       <div class="product-card_content_label">
-        <p>IPHONE 9</p>
-        <h1>An apple mobile which is nothing like apple.</h1>
+        <p>{{ title }}</p>
+        <h1>{{ description }}</h1>
       </div>
       <div class="product-card_content_price">
-        <h1>Rp.5.000.000</h1>
+        <h1>${{ price }}</h1>
         <div class="product-card_content_price_discount">
-          <p class="product-card_content_price_discount_percent">13%</p>
+          <p class="product-card_content_price_discount_percent">{{ discountPercentage }}%</p>
           <p class="product-card_content_price_discount_prevPrice">
-            Rp.6.600.000
+            ${{ price }}
           </p>
         </div>
       </div>
@@ -30,7 +31,7 @@
           width="17"
           height="16"
         />
-        <p>4.76</p>
+        <p>{{ rating }}</p>
       </div>
       <button>
         <img
@@ -44,3 +45,17 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: [
+    'thumb',
+    'category',
+    'title',
+    'description',
+    'price',
+    'discountPercentage',
+    'rating',
+  ]
+}
+</script>

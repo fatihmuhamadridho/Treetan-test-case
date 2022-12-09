@@ -28,7 +28,7 @@
     <hr>
     <div class="product-chart_summary">
         <p class="product-chart_summary_label">Total</p>
-        <p class="product-chart_summary_price">15.000.000</p>
+        <p class="product-chart_summary_price">${{ chart.summary }}</p>
     </div>
     <button>
       <img
@@ -41,3 +41,11 @@
     </button>
   </div>
 </template>
+
+<script>
+export default {
+  props: [
+    'chart'
+  ]
+}
+</script>
